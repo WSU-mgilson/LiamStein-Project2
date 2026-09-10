@@ -1,3 +1,7 @@
+R0_VAL .FILL 3
+R1_VAL .FILL 3
 .ORIG x3000
-; Add your code here
+LD R0, R0_VAL
+LD R1, R1_VAL
+
 .END
