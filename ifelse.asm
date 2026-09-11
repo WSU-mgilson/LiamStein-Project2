@@ -10,4 +10,14 @@ BRz IF_EQUAL
 
 IF_EQUAL:
     AND R3, R3 #0
+    ADD R3, R3, #5
+    BRNZP END_IFESLE
+ELSE_BLOCK
+    AND R3, R3 #0
+    ADD R3, R3, #-5
+END_IFELSE
+    ST R3, X8002
+    HALT
 .END
+
+**refrence: https://www.cs.utexas.edu/~fussell/courses/cs310h/lectures/ISA.pdf
