@@ -4,9 +4,9 @@ R1_VAL .FILL 9
 LD R0, R0_VAL
 LD R1, R1_VAL
 NOT R2, R1
-ADD R2, R2 #1    ; R2 = -R1
-ADD R2, R0, R2    ; R2 = R0 - R1
-BRz IF_EQUAL      ; if R0 == R1
+ADD R2, R2 #1
+ADD R2, R0, R2
+BRz IF_EQUAL
 
 IF_EQUAL:
     AND R3, R3 #0
