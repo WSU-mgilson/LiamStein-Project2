@@ -1,9 +1,5 @@
 .ORIG x3000
 
-R0_VAL .FILL 6
-R1_VAL .FILL 9
-RESULT_ADDR .FILL x8002
-
 LD R0, R0_VAL
 LD R1, R1_VAL
 NOT R2, R1
@@ -25,5 +21,8 @@ END_IFELSE:
     ST R3, RESULT_ADDR
     HALT
 .END
+R0_VAL .FILL 6
+R1_VAL .FILL 9
+RESULT_ADDR .FILL x8002
 
 **refrence: https://www.cs.utexas.edu/~fussell/courses/cs310h/lectures/ISA.pdf
