@@ -23,3 +23,6 @@ LOOP_END
 MAX_ITERS   .FILL 10
 RESULT_ADDR .FILL X8001
 .END
+
+
+; refrence: https://www.cs.utexas.edu/~fussell/courses/cs310h/lectures/ISA.pdf
