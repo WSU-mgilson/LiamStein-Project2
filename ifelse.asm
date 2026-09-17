@@ -24,4 +24,5 @@ R0_VAL .FILL 6
 R1_VAL .FILL 9
 RESULT_ADDR .FILL x8002
 
-**refrence: https://www.cs.utexas.edu/~fussell/courses/cs310h/lectures/ISA.pdf
+
+; refrence: https://www.cs.utexas.edu/~fussell/courses/cs310h/lectures/ISA.pdf
