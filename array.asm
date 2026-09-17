@@ -1,3 +1,23 @@
 .ORIG x3000
-; Add your code here
+
+LEA R1, ARRAY
+LD R2, N
+
+LOOP GETC
+  OUT
+  LD, R3, ASCII
+  NOT R3, R3
+  ADD R3, R3, #1
+  ADD R0, R0, R3
+  STR R0, R1, #0
+  ADD R1, R1, #1
+  ADD R2, R2, #-1
+  BRp LOOP
+
+HALT
+N .FILL 5
+ASCII .FILL x0030
+
+.ARRAY .BLKW 5
+  
 .END
